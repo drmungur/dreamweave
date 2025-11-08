@@ -85,15 +85,6 @@ Right-click `index.html` → **Open with Live Server** (or open directly in your
 
 ---
 
-## 📸 Screenshots
-
-| Preview | Description |
-|----------|-------------|
-| ![UI](https://via.placeholder.com/400x200?text=DreamWeave+UI) | Main interface with animated gradient background |
-| ![Result](https://via.placeholder.com/400x200?text=Generated+Idea) | Example of generated invention card |
-
----
-
 ## 🧩 Folder Structure
 ```
 dreamweave/
