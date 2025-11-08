@@ -11,7 +11,7 @@ It combines smooth front-end design with real AI-integration logic for creative 
 
 ## 🚀 Demo
 
-🖥️ **Live preview:** [Coming soon / Vercel link here]  
+🖥️ **Live preview:** [(https://drmungur.github.io/dreamweave/)]  
 📸 *If the AI is disabled due to quota limits, the random generator still demonstrates full interactivity.*
 
 ---
