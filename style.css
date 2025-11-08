@@ -1,0 +1,102 @@
+/* applies to the whole page */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #a2d9ff, #d8b4fe, #ffe6a7);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+
+  display: flex;                 /* center everything horizontally & vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;                 /* viewport height */
+  margin: 0;                     /* remove default browser margin */
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* the white card in the middle */
+.container {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 350px;
+}
+.container {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+
+/* the input boxes */
+input {
+  margin: 0.5rem;
+  padding: 0.7rem;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* the button styling */
+button {
+  background: linear-gradient(135deg, #6b5bff, #8e7bff);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(107, 91, 255, 0.4);
+}
+button.secondary {
+    background: #e5e7eb;
+    color: #111;
+    box-shadow: none;
+}
+
+button.secondary:hover {
+    background: #d1d5db;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(107, 91, 255, 0.6);
+}
+
+
+/* the result box */
+.card {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #f1f1ff;      /* pale purple background */
+}
+
+/* utility: hide elements */
+.hidden {
+  display: none;
+}
+
+
+/* Animation for the result card appearing */
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply it whenever the card is shown */
+.card {
+  animation: pop 0.4s ease-out;
+}

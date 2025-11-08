@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- metadata & page setup -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DreamWeave</title>
+
+  <!-- connect CSS so styles apply -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- everything visible sits inside .container -->
+  <div class="container">
+    <h1>💡 DreamWeave</h1>
+    <p>Combine any two ideas and get a brand new invention!</p>
+
+    <!-- two input boxes where user types ideas -->
+    <input id="idea1" placeholder="First idea..." />
+    <input id="idea2" placeholder="Second idea..." />
+
+    <!-- button triggers the JS function -->
+    <button onclick="generate()">Generate ✨</button>
+    <button onclick="clearAll()" class="secondary">Clear</button>
+
+
+
+
+    <!-- result card: hidden until we generate output -->
+    <div id="result" class="card hidden">
+      <h2 id="title"></h2>
+      <p id="desc"></p>
+    </div>
+  </div>
+
+  <!-- connect JS so button can run code -->
+  <script src="script.js"></script>
+</body>
+</html>
